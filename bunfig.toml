@@ -1,0 +1,25 @@
+[test]
+# Only this repository's specs, not those of a local (gitignored) upstream/ Nest checkout
+root = "test"
+# Nest's decorators keep their metadata through the Reflect API
+preload = ["reflect-metadata"]
+
+[lint.rules]
+# The transport and the adapters work on untyped prototypes, and implement
+# Nest's adapter API, whose handlers are typed as Function
+"@typescript-eslint/no-explicit-any" = "off"
+"@typescript-eslint/no-unsafe-function-type" = "off"
+# The benchmarks skip a probe that does not apply with an empty catch
+"no-empty" = ["error", { allowEmptyCatch = true }]
+# Of the type-aware rules: these follow from allowing any
+"@typescript-eslint/no-unsafe-member-access" = "off"
+"@typescript-eslint/no-unsafe-assignment" = "off"
+"@typescript-eslint/no-unsafe-call" = "off"
+"@typescript-eslint/no-unsafe-return" = "off"
+"@typescript-eslint/no-unsafe-argument" = "off"
+# Node and Express stringify header values, cookies and bodies as given, and
+# the adapters forward the errors of multer and of view engines unchanged
+"@typescript-eslint/no-base-to-string" = "off"
+"@typescript-eslint/prefer-promise-reject-errors" = "off"
+# Status codes are numbers, compared with Nest's HttpStatus enum
+"@typescript-eslint/no-unsafe-enum-comparison" = "off"

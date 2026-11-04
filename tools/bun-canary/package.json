@@ -1,0 +1,7 @@
+{
+  "name": "bun-canary",
+  "private": true,
+  "devDependencies": {
+    "bun": "1.4.4-canary.20261103.1"
+  }
+}

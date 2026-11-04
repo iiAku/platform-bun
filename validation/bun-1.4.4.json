@@ -1,0 +1,8 @@
+{
+  "version": "1.4.4",
+  "revision": "1.4.4+38afee6c8",
+  "release": "https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4",
+  "asset": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64.zip",
+  "archiveSha256": "bf8ccbfb2b0b80159e0f9a6d15c55317add8077534dbc6130a3edb52fccb395c",
+  "binarySha256": "10702245766b225e70bbf6235fd6b47214fd94b4760d00ffaed8ab0df57ac235"
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# Generated files: collapsed in diffs and left out of the language statistics
+bun.lock linguist-generated=true
+tools/bun-canary/bun.lock linguist-generated=true
+benchmark/results/**/raw.json linguist-generated=true

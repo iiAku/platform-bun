@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2023",
+    "esModuleInterop": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": [
+      "bun",
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

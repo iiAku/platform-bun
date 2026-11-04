@@ -1,0 +1,48 @@
+name: Bug report
+description: Something behaves differently from @nestjs/platform-node, or breaks
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. platform-bun is experimental, so a minimal reproduction makes all the difference.
+        Before filing, check [COMPATIBILITY.md](https://github.com/iiAku/platform-bun/blob/main/COMPATIBILITY.md): some differences from `node:http` are known limits of `Bun.serve()`.
+        Security issues go through [private reporting](https://github.com/iiAku/platform-bun/security/advisories/new), not here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A small Nest app or test, and the request that triggers the problem (a `curl` command is ideal).
+      render: ts
+    validations:
+      required: true
+  - type: dropdown
+    id: platform-node
+    attributes:
+      label: Does @nestjs/platform-node on Node behave the same way?
+      options:
+        - "No, it behaves as I expected"
+        - "Yes, it behaves the same way"
+        - "I haven't checked"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: platform-bun commit, Bun version (`bun --revision`), NestJS version, OS.
+      placeholder: "abc1234, 1.4.4+38afee6c8, @nestjs/core 12.3.3, Linux x64"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or stack traces
+      render: text

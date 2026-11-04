@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "strict": false, "strictNullChecks": true,
+    "rootDir": ".",
+    "noEmit": true,
+    "types": ["bun", "node", "bun-types/test-globals"],
+    "paths": { "@nestjs/platform-bun": ["./src/index.ts"] }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

@@ -1,0 +1,16 @@
+# https://github.com/evilmartians/lefthook
+# The gates take well under a second, so they run over their whole scope
+pre-commit:
+  parallel: true
+  commands:
+    check:
+      run: bun run check
+    lint:
+      run: bun run lint
+    fmt:
+      run: bun run fmt --check
+
+pre-push:
+  commands:
+    test:
+      run: bun run test

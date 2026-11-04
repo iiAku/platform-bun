@@ -1,0 +1,2321 @@
+{
+  "startedAt": "2026-11-04T15:14:07.989Z",
+  "args": {
+    "targets": [
+      {
+        "framework": "node",
+        "runtime": "node",
+        "name": "node@node"
+      },
+      {
+        "framework": "nest-node",
+        "runtime": "node",
+        "name": "nest-node@node"
+      },
+      {
+        "framework": "express",
+        "runtime": "node",
+        "name": "express@node"
+      },
+      {
+        "framework": "nest-express",
+        "runtime": "node",
+        "name": "nest-express@node"
+      },
+      {
+        "framework": "fastify",
+        "runtime": "node",
+        "name": "fastify@node"
+      },
+      {
+        "framework": "nest-fastify",
+        "runtime": "node",
+        "name": "nest-fastify@node"
+      },
+      {
+        "framework": "node",
+        "runtime": "bun",
+        "name": "node@bun"
+      },
+      {
+        "framework": "bun",
+        "runtime": "bun",
+        "name": "bun@bun"
+      },
+      {
+        "framework": "nest-node",
+        "runtime": "bun",
+        "name": "nest-node@bun"
+      },
+      {
+        "framework": "nest-bun",
+        "runtime": "bun",
+        "name": "nest-bun@bun"
+      },
+      {
+        "framework": "express",
+        "runtime": "bun",
+        "name": "express@bun"
+      },
+      {
+        "framework": "nest-express",
+        "runtime": "bun",
+        "name": "nest-express@bun"
+      },
+      {
+        "framework": "fastify",
+        "runtime": "bun",
+        "name": "fastify@bun"
+      },
+      {
+        "framework": "nest-fastify",
+        "runtime": "bun",
+        "name": "nest-fastify@bun"
+      }
+    ],
+    "node": "~/.nvm/versions/node/v26.13.0/bin/node",
+    "bun": ".tools/bun-1.4.4/bun",
+    "rounds": 3,
+    "connections": 100,
+    "duration": 10,
+    "pipelining": 10,
+    "generator": "wrk",
+    "wrk": ".tools/wrk/wrk",
+    "threads": 4,
+    "port": 3000,
+    "verbose": false,
+    "pinning": {
+      "server": "0,1,2,3",
+      "generator": "4,5,6,7,8,9,10,11",
+      "cores": 12
+    }
+  },
+  "environment": {
+    "host": {
+      "platform": "linux",
+      "arch": "x64",
+      "kernel": "7.1.12-357.current",
+      "cpu": "AMD Ryzen 9 9900X 12-Core Processor",
+      "physicalCores": 12,
+      "logicalCPUs": 12,
+      "smt": false,
+      "cpuGovernor": "performance",
+      "energyPerformancePreference": "performance",
+      "memoryGiB": 60,
+      "freeMemoryGiB": 45.7,
+      "loadAverage": [
+        2.07,
+        2.01,
+        1.9
+      ],
+      "cpusAllowed": "4,5,6,7,8,9,10,11"
+    },
+    "runtimes": {
+      "node": {
+        "path": "~/.nvm/versions/node/v26.13.0/bin/node",
+        "version": "v26.13.0"
+      },
+      "bun": {
+        "path": ".tools/bun-1.4.4/bun",
+        "version": "1.4.4"
+      },
+      "loadGenerator": {
+        "name": "wrk",
+        "path": ".tools/wrk/wrk",
+        "version": "wrk 4.2.0 [epoll]"
+      }
+    },
+    "packages": {
+      "@nestjs/core": "12.3.3",
+      "@nestjs/common": "12.3.3",
+      "@nestjs/platform-node": "12.3.3",
+      "@nestjs/platform-express": "12.3.3",
+      "@nestjs/platform-fastify": "12.3.3",
+      "express": "5.3.0",
+      "fastify": "5.12.8",
+      "autocannon": "8.0.0",
+      "@nestjs/platform-bun": "0.1.0 (this tree, built)"
+    },
+    "pinning": {
+      "server": "0,1,2,3",
+      "generator": "4,5,6,7,8,9,10,11",
+      "cores": 12
+    }
+  },
+  "samples": [
+    {
+      "target": "node@node",
+      "framework": "node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.6512354699419582,
+      "serverSoftirqCpu": 0.35558255720757237,
+      "generatorCpu": 0.47144653652239926,
+      "requestsPerSecAvg": 202709.27974524876,
+      "throughputBytesPerSecAvg": 35676833.23516378,
+      "totalRequests": 2028754,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@node",
+      "framework": "nest-node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.6802426171218295,
+      "serverSoftirqCpu": 0.3256374349217569,
+      "generatorCpu": 0.4405095361978368,
+      "requestsPerSecAvg": 185614.57863176544,
+      "throughputBytesPerSecAvg": 32668165.839190714,
+      "totalRequests": 1857583,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@node",
+      "framework": "express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.7898372549073402,
+      "serverSoftirqCpu": 0.2136854267385219,
+      "generatorCpu": 0.28557958900568814,
+      "requestsPerSecAvg": 115273.75535373348,
+      "throughputBytesPerSecAvg": 27550427.529542297,
+      "totalRequests": 1154033,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@node",
+      "framework": "nest-express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.8058862663886808,
+      "serverSoftirqCpu": 0.20371846139193417,
+      "generatorCpu": 0.2656328957365416,
+      "requestsPerSecAvg": 105591.83056522915,
+      "throughputBytesPerSecAvg": 25236447.505089764,
+      "totalRequests": 1056953,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@node",
+      "framework": "fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.6638649150715807,
+      "serverSoftirqCpu": 0.33941965582607136,
+      "generatorCpu": 0.44923189741685915,
+      "requestsPerSecAvg": 192787.09525753092,
+      "throughputBytesPerSecAvg": 34123315.86058298,
+      "totalRequests": 1930473,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@node",
+      "framework": "nest-fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 1,
+      "serverCpu": 0.7048642318925751,
+      "serverSoftirqCpu": 0.29851898772787533,
+      "generatorCpu": 0.3973597227949644,
+      "requestsPerSecAvg": 163050.84732220296,
+      "throughputBytesPerSecAvg": 28859999.97602992,
+      "totalRequests": 1632544,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "node@bun",
+      "framework": "node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.6601969244076568,
+      "serverSoftirqCpu": 0.3632567784971665,
+      "generatorCpu": 0.4919308417250456,
+      "requestsPerSecAvg": 202499.52498114036,
+      "throughputBytesPerSecAvg": 35639916.3966807,
+      "totalRequests": 2045164,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "bun@bun",
+      "framework": "bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.5684124634129372,
+      "serverSoftirqCpu": 0.4335518613729608,
+      "generatorCpu": 0.5544269194976803,
+      "requestsPerSecAvg": 259407.23824415606,
+      "throughputBytesPerSecAvg": 33463533.733496133,
+      "totalRequests": 2595999,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@bun",
+      "framework": "nest-node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.6780769283172492,
+      "serverSoftirqCpu": 0.34852554931181146,
+      "generatorCpu": 0.46336921169249423,
+      "requestsPerSecAvg": 172126.80482128743,
+      "throughputBytesPerSecAvg": 30294317.648546584,
+      "totalRequests": 1723179,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-bun@bun",
+      "framework": "nest-bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.6570613071042609,
+      "serverSoftirqCpu": 0.37945789771978594,
+      "generatorCpu": 0.4912981202056176,
+      "requestsPerSecAvg": 208721.54997926403,
+      "throughputBytesPerSecAvg": 26925079.94732506,
+      "totalRequests": 2089635,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@bun",
+      "framework": "express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.7250378331057931,
+      "serverSoftirqCpu": 0.3055944585817806,
+      "generatorCpu": 0.4204420492252602,
+      "requestsPerSecAvg": 145145.42012756414,
+      "throughputBytesPerSecAvg": 34689755.41048783,
+      "totalRequests": 1453000,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@bun",
+      "framework": "nest-express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.7347744889544412,
+      "serverSoftirqCpu": 0.2965054663308003,
+      "generatorCpu": 0.393343951967459,
+      "requestsPerSecAvg": 131812.07906248237,
+      "throughputBytesPerSecAvg": 31503086.895933285,
+      "totalRequests": 1319980,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@bun",
+      "framework": "fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.6750816780223742,
+      "serverSoftirqCpu": 0.3505231789731558,
+      "generatorCpu": 0.4693615217019466,
+      "requestsPerSecAvg": 179780.60004085719,
+      "throughputBytesPerSecAvg": 31821166.20723172,
+      "totalRequests": 1799691,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@bun",
+      "framework": "nest-fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 1,
+      "serverCpu": 0.7201390932298138,
+      "serverSoftirqCpu": 0.30363701018288963,
+      "generatorCpu": 0.41450447113782635,
+      "requestsPerSecAvg": 146048.86888388396,
+      "throughputBytesPerSecAvg": 25850649.792447463,
+      "totalRequests": 1461843,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@node",
+      "framework": "nest-node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.682083158823739,
+      "serverSoftirqCpu": 0.32256641332367164,
+      "generatorCpu": 0.43142009460008096,
+      "requestsPerSecAvg": 187436.7948154541,
+      "throughputBytesPerSecAvg": 32988875.887519922,
+      "totalRequests": 1876253,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@node",
+      "framework": "express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.7881375255794525,
+      "serverSoftirqCpu": 0.2177616990827892,
+      "generatorCpu": 0.2846884598100684,
+      "requestsPerSecAvg": 115436.19788348717,
+      "throughputBytesPerSecAvg": 27589251.294153433,
+      "totalRequests": 1155184,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@node",
+      "framework": "nest-express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.8013612004780747,
+      "serverSoftirqCpu": 0.2025857082155033,
+      "generatorCpu": 0.26246325744176047,
+      "requestsPerSecAvg": 104749.72203428276,
+      "throughputBytesPerSecAvg": 25035183.56619358,
+      "totalRequests": 1049228,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@node",
+      "framework": "fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.6661140508601675,
+      "serverSoftirqCpu": 0.338549720002394,
+      "generatorCpu": 0.4454075962273384,
+      "requestsPerSecAvg": 191059.41859707743,
+      "throughputBytesPerSecAvg": 33817517.0916827,
+      "totalRequests": 1912530,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@node",
+      "framework": "nest-fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.7079163950641595,
+      "serverSoftirqCpu": 0.29754454968846195,
+      "generatorCpu": 0.4013856005864486,
+      "requestsPerSecAvg": 164183.03578340277,
+      "throughputBytesPerSecAvg": 29060397.333662286,
+      "totalRequests": 1643716,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "node@bun",
+      "framework": "node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.6510976212786913,
+      "serverSoftirqCpu": 0.37448099383360317,
+      "generatorCpu": 0.4963121438274687,
+      "requestsPerSecAvg": 197857.76119292655,
+      "throughputBytesPerSecAvg": 34822965.96995507,
+      "totalRequests": 1980703,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "bun@bun",
+      "framework": "bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.5664054032404665,
+      "serverSoftirqCpu": 0.4365417305398304,
+      "generatorCpu": 0.5644075005835336,
+      "requestsPerSecAvg": 259995.91499757476,
+      "throughputBytesPerSecAvg": 33539473.034687143,
+      "totalRequests": 2601867,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@bun",
+      "framework": "nest-node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.6860831577119895,
+      "serverSoftirqCpu": 0.34154358069505153,
+      "generatorCpu": 0.46038476812987944,
+      "requestsPerSecAvg": 175467.17717359535,
+      "throughputBytesPerSecAvg": 30882223.18255278,
+      "totalRequests": 1756504,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-bun@bun",
+      "framework": "nest-bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.6571266191218017,
+      "serverSoftirqCpu": 0.38049428857964507,
+      "generatorCpu": 0.49634031869838213,
+      "requestsPerSecAvg": 207083.95150621078,
+      "throughputBytesPerSecAvg": 26713829.74430119,
+      "totalRequests": 2073052,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@bun",
+      "framework": "express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.7239680072070815,
+      "serverSoftirqCpu": 0.3085601575544665,
+      "generatorCpu": 0.41640642621428,
+      "requestsPerSecAvg": 143868.88097708594,
+      "throughputBytesPerSecAvg": 34384662.55352353,
+      "totalRequests": 1440341,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@bun",
+      "framework": "nest-express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.7388076311238134,
+      "serverSoftirqCpu": 0.29352627506810963,
+      "generatorCpu": 0.3903699780667717,
+      "requestsPerSecAvg": 131844.87757040237,
+      "throughputBytesPerSecAvg": 31510925.73932617,
+      "totalRequests": 1320230,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@bun",
+      "framework": "fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.6728506999514473,
+      "serverSoftirqCpu": 0.3553929513096665,
+      "generatorCpu": 0.47019685412037343,
+      "requestsPerSecAvg": 180910.3339630063,
+      "throughputBytesPerSecAvg": 32021129.111452114,
+      "totalRequests": 1811671,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@bun",
+      "framework": "nest-fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 2,
+      "serverCpu": 0.7121828821690791,
+      "serverSoftirqCpu": 0.31563785521098037,
+      "generatorCpu": 0.4285083540680714,
+      "requestsPerSecAvg": 148770.28784519198,
+      "throughputBytesPerSecAvg": 26332340.94859898,
+      "totalRequests": 1489025,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "node@node",
+      "framework": "node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 2,
+      "serverCpu": 0.6460887962254817,
+      "serverSoftirqCpu": 0.35849440161506635,
+      "generatorCpu": 0.47033666618578346,
+      "requestsPerSecAvg": 204017.23452827102,
+      "throughputBytesPerSecAvg": 35907033.2769757,
+      "totalRequests": 2042430,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@node",
+      "framework": "express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.7936002404360817,
+      "serverSoftirqCpu": 0.2116267307829551,
+      "generatorCpu": 0.2815034815131761,
+      "requestsPerSecAvg": 113849.07585950708,
+      "throughputBytesPerSecAvg": 27209929.130422194,
+      "totalRequests": 1140104,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@node",
+      "framework": "nest-express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.8051927830428173,
+      "serverSoftirqCpu": 0.2007986965156405,
+      "generatorCpu": 0.2667325968640598,
+      "requestsPerSecAvg": 106546.05314440883,
+      "throughputBytesPerSecAvg": 25464506.70151371,
+      "totalRequests": 1066142,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@node",
+      "framework": "fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.6629372327264083,
+      "serverSoftirqCpu": 0.346444608066361,
+      "generatorCpu": 0.462258943904107,
+      "requestsPerSecAvg": 195453.77415465872,
+      "throughputBytesPerSecAvg": 34595318.02537459,
+      "totalRequests": 1957003,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@node",
+      "framework": "nest-fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.7084193486855722,
+      "serverSoftirqCpu": 0.29675676524628347,
+      "generatorCpu": 0.393677324939514,
+      "requestsPerSecAvg": 165274.91129177428,
+      "throughputBytesPerSecAvg": 29253659.298644047,
+      "totalRequests": 1653574,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "node@bun",
+      "framework": "node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.6591309624548937,
+      "serverSoftirqCpu": 0.36252202935019157,
+      "generatorCpu": 0.4903534887353831,
+      "requestsPerSecAvg": 195927.31193017334,
+      "throughputBytesPerSecAvg": 34483206.899710506,
+      "totalRequests": 1961309,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "bun@bun",
+      "framework": "bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.567339314022547,
+      "serverSoftirqCpu": 0.4344940169010703,
+      "generatorCpu": 0.5473625776133024,
+      "requestsPerSecAvg": 258347.26634258556,
+      "throughputBytesPerSecAvg": 33326797.35819354,
+      "totalRequests": 2585696,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@bun",
+      "framework": "nest-node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.6762267770122784,
+      "serverSoftirqCpu": 0.3486013961259752,
+      "generatorCpu": 0.4564780459300019,
+      "requestsPerSecAvg": 172335.354636615,
+      "throughputBytesPerSecAvg": 30331022.41604424,
+      "totalRequests": 1724857,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-bun@bun",
+      "framework": "nest-bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.6576027336684922,
+      "serverSoftirqCpu": 0.3781964128381769,
+      "generatorCpu": 0.49195470060480523,
+      "requestsPerSecAvg": 203674.94759436135,
+      "throughputBytesPerSecAvg": 26274068.239672612,
+      "totalRequests": 2040514,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "express@bun",
+      "framework": "express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.7189390164003395,
+      "serverSoftirqCpu": 0.3135372932634814,
+      "generatorCpu": 0.42736930419353514,
+      "requestsPerSecAvg": 146304.53802730248,
+      "throughputBytesPerSecAvg": 34966784.58852529,
+      "totalRequests": 1464842,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-express@bun",
+      "framework": "nest-express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.7458447722199739,
+      "serverSoftirqCpu": 0.28356079693503694,
+      "generatorCpu": 0.38041078743749673,
+      "requestsPerSecAvg": 129245.15120575803,
+      "throughputBytesPerSecAvg": 30889591.13817617,
+      "totalRequests": 1294099,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "fastify@bun",
+      "framework": "fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.6760362062108684,
+      "serverSoftirqCpu": 0.3445088495461589,
+      "generatorCpu": 0.45734797997721965,
+      "requestsPerSecAvg": 178578.6811461497,
+      "throughputBytesPerSecAvg": 31608426.562868495,
+      "totalRequests": 1787791,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-fastify@bun",
+      "framework": "nest-fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "round": 3,
+      "serverCpu": 0.7189546217185744,
+      "serverSoftirqCpu": 0.3075528104018346,
+      "generatorCpu": 0.4203887440882219,
+      "requestsPerSecAvg": 146677.6527092718,
+      "throughputBytesPerSecAvg": 25961944.529541105,
+      "totalRequests": 1468462,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "node@node",
+      "framework": "node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.6551205660865729,
+      "serverSoftirqCpu": 0.348532130433253,
+      "generatorCpu": 0.4683712583759188,
+      "requestsPerSecAvg": 203023.76025699594,
+      "throughputBytesPerSecAvg": 35732181.80523129,
+      "totalRequests": 2032292,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    },
+    {
+      "target": "nest-node@node",
+      "framework": "nest-node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "round": 3,
+      "serverCpu": 0.6786312992067615,
+      "serverSoftirqCpu": 0.32234986712321173,
+      "generatorCpu": 0.43212845964195257,
+      "requestsPerSecAvg": 182823.5951367985,
+      "throughputBytesPerSecAvg": 32176952.744076535,
+      "totalRequests": 1831303,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0,
+      "stderr": ""
+    }
+  ],
+  "summaries": [
+    {
+      "target": "node@node",
+      "framework": "node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 203023.76025699594,
+      "requestsPerSecMin": 202709.27974524876,
+      "requestsPerSecMax": 204017.23452827102,
+      "throughputBytesPerSecAvg": 35732181.80523129,
+      "serverCpu": 0.6512354699419582,
+      "serverSoftirqCpu": 0.35558255720757237,
+      "generatorCpu": 0.47033666618578346,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-node@node",
+      "framework": "nest-node",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 185614.57863176544,
+      "requestsPerSecMin": 182823.5951367985,
+      "requestsPerSecMax": 187436.7948154541,
+      "throughputBytesPerSecAvg": 32668165.839190714,
+      "serverCpu": 0.6802426171218295,
+      "serverSoftirqCpu": 0.32256641332367164,
+      "generatorCpu": 0.43212845964195257,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "express@node",
+      "framework": "express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 115273.75535373348,
+      "requestsPerSecMin": 113849.07585950708,
+      "requestsPerSecMax": 115436.19788348717,
+      "throughputBytesPerSecAvg": 27550427.529542297,
+      "serverCpu": 0.7898372549073402,
+      "serverSoftirqCpu": 0.2136854267385219,
+      "generatorCpu": 0.2846884598100684,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-express@node",
+      "framework": "nest-express",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 105591.83056522915,
+      "requestsPerSecMin": 104749.72203428276,
+      "requestsPerSecMax": 106546.05314440883,
+      "throughputBytesPerSecAvg": 25236447.505089764,
+      "serverCpu": 0.8051927830428173,
+      "serverSoftirqCpu": 0.2025857082155033,
+      "generatorCpu": 0.2656328957365416,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "fastify@node",
+      "framework": "fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 192787.09525753092,
+      "requestsPerSecMin": 191059.41859707743,
+      "requestsPerSecMax": 195453.77415465872,
+      "throughputBytesPerSecAvg": 34123315.86058298,
+      "serverCpu": 0.6638649150715807,
+      "serverSoftirqCpu": 0.33941965582607136,
+      "generatorCpu": 0.44923189741685915,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-fastify@node",
+      "framework": "nest-fastify",
+      "runtime": "node",
+      "runtimeVersion": "v26.13.0",
+      "rounds": 3,
+      "requestsPerSecAvg": 164183.03578340277,
+      "requestsPerSecMin": 163050.84732220296,
+      "requestsPerSecMax": 165274.91129177428,
+      "throughputBytesPerSecAvg": 29060397.333662286,
+      "serverCpu": 0.7079163950641595,
+      "serverSoftirqCpu": 0.29754454968846195,
+      "generatorCpu": 0.3973597227949644,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "node@bun",
+      "framework": "node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 197857.76119292655,
+      "requestsPerSecMin": 195927.31193017334,
+      "requestsPerSecMax": 202499.52498114036,
+      "throughputBytesPerSecAvg": 34822965.96995507,
+      "serverCpu": 0.6591309624548937,
+      "serverSoftirqCpu": 0.3632567784971665,
+      "generatorCpu": 0.4919308417250456,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "bun@bun",
+      "framework": "bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 259407.23824415606,
+      "requestsPerSecMin": 258347.26634258556,
+      "requestsPerSecMax": 259995.91499757476,
+      "throughputBytesPerSecAvg": 33463533.733496133,
+      "serverCpu": 0.567339314022547,
+      "serverSoftirqCpu": 0.4344940169010703,
+      "generatorCpu": 0.5544269194976803,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-node@bun",
+      "framework": "nest-node",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 172335.354636615,
+      "requestsPerSecMin": 172126.80482128743,
+      "requestsPerSecMax": 175467.17717359535,
+      "throughputBytesPerSecAvg": 30331022.41604424,
+      "serverCpu": 0.6780769283172492,
+      "serverSoftirqCpu": 0.34852554931181146,
+      "generatorCpu": 0.46038476812987944,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-bun@bun",
+      "framework": "nest-bun",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 207083.95150621078,
+      "requestsPerSecMin": 203674.94759436135,
+      "requestsPerSecMax": 208721.54997926403,
+      "throughputBytesPerSecAvg": 26713829.74430119,
+      "serverCpu": 0.6571266191218017,
+      "serverSoftirqCpu": 0.37945789771978594,
+      "generatorCpu": 0.49195470060480523,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "express@bun",
+      "framework": "express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 145145.42012756414,
+      "requestsPerSecMin": 143868.88097708594,
+      "requestsPerSecMax": 146304.53802730248,
+      "throughputBytesPerSecAvg": 34689755.41048783,
+      "serverCpu": 0.7239680072070815,
+      "serverSoftirqCpu": 0.3085601575544665,
+      "generatorCpu": 0.4204420492252602,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-express@bun",
+      "framework": "nest-express",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 131812.07906248237,
+      "requestsPerSecMin": 129245.15120575803,
+      "requestsPerSecMax": 131844.87757040237,
+      "throughputBytesPerSecAvg": 31503086.895933285,
+      "serverCpu": 0.7388076311238134,
+      "serverSoftirqCpu": 0.29352627506810963,
+      "generatorCpu": 0.3903699780667717,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "fastify@bun",
+      "framework": "fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 179780.60004085719,
+      "requestsPerSecMin": 178578.6811461497,
+      "requestsPerSecMax": 180910.3339630063,
+      "throughputBytesPerSecAvg": 31821166.20723172,
+      "serverCpu": 0.6750816780223742,
+      "serverSoftirqCpu": 0.3505231789731558,
+      "generatorCpu": 0.4693615217019466,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    },
+    {
+      "target": "nest-fastify@bun",
+      "framework": "nest-fastify",
+      "runtime": "bun",
+      "runtimeVersion": "1.4.4",
+      "rounds": 3,
+      "requestsPerSecAvg": 146677.6527092718,
+      "requestsPerSecMin": 146048.86888388396,
+      "requestsPerSecMax": 148770.28784519198,
+      "throughputBytesPerSecAvg": 25961944.529541105,
+      "serverCpu": 0.7189546217185744,
+      "serverSoftirqCpu": 0.3075528104018346,
+      "generatorCpu": 0.4203887440882219,
+      "errors": 0,
+      "timeouts": 0,
+      "httpErrors": 0
+    }
+  ],
+  "raw": [
+    {
+      "target": "node@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 202709.27974524876,
+          "total": 2028754
+        },
+        "latency": {},
+        "throughput": {
+          "average": 35676833.23516378
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2028754,
+          "durationUs": 10008195,
+          "bytes": 357060704,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 185614.57863176544,
+          "total": 1857583
+        },
+        "latency": {},
+        "throughput": {
+          "average": 32668165.839190714
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1857583,
+          "durationUs": 10007743,
+          "bytes": 326934608,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 115273.75535373348,
+          "total": 1154033
+        },
+        "latency": {},
+        "throughput": {
+          "average": 27550427.529542297
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1154033,
+          "durationUs": 10011238,
+          "bytes": 275813887,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 105591.83056522915,
+          "total": 1056953
+        },
+        "latency": {},
+        "throughput": {
+          "average": 25236447.505089764
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1056953,
+          "durationUs": 10009799,
+          "bytes": 252611767,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 192787.09525753092,
+          "total": 1930473
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34123315.86058298
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1930473,
+          "durationUs": 10013497,
+          "bytes": 341693721,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@node",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 163050.84732220296,
+          "total": 1632544
+        },
+        "latency": {},
+        "throughput": {
+          "average": 28859999.97602992
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1632544,
+          "durationUs": 10012484,
+          "bytes": 288960288,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "node@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 202499.52498114036,
+          "total": 2045164
+        },
+        "latency": {},
+        "throughput": {
+          "average": 35639916.3966807
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2045164,
+          "durationUs": 10099599,
+          "bytes": 359948864,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "bun@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 259407.23824415606,
+          "total": 2595999
+        },
+        "latency": {},
+        "throughput": {
+          "average": 33463533.733496133
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2595999,
+          "durationUs": 10007427,
+          "bytes": 334883871,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 172126.80482128743,
+          "total": 1723179
+        },
+        "latency": {},
+        "throughput": {
+          "average": 30294317.648546584
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1723179,
+          "durationUs": 10011102,
+          "bytes": 303279504,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-bun@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 208721.54997926403,
+          "total": 2089635
+        },
+        "latency": {},
+        "throughput": {
+          "average": 26925079.94732506
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2089635,
+          "durationUs": 10011592,
+          "bytes": 269562915,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 145145.42012756414,
+          "total": 1453000
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34689755.41048783
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1453000,
+          "durationUs": 10010650,
+          "bytes": 347267000,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 131812.07906248237,
+          "total": 1319980
+        },
+        "latency": {},
+        "throughput": {
+          "average": 31503086.895933285
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1319980,
+          "durationUs": 10014105,
+          "bytes": 315475220,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 179780.60004085719,
+          "total": 1799691
+        },
+        "latency": {},
+        "throughput": {
+          "average": 31821166.20723172
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1799691,
+          "durationUs": 10010485,
+          "bytes": 318545307,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@bun",
+      "round": 1,
+      "result": {
+        "requests": {
+          "average": 146048.86888388396,
+          "total": 1461843
+        },
+        "latency": {},
+        "throughput": {
+          "average": 25850649.792447463
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1461843,
+          "durationUs": 10009273,
+          "bytes": 258746211,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 187436.7948154541,
+          "total": 1876253
+        },
+        "latency": {},
+        "throughput": {
+          "average": 32988875.887519922
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1876253,
+          "durationUs": 10010057,
+          "bytes": 330220528,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 115436.19788348717,
+          "total": 1155184
+        },
+        "latency": {},
+        "throughput": {
+          "average": 27589251.294153433
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1155184,
+          "durationUs": 10007121,
+          "bytes": 276088976,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 104749.72203428276,
+          "total": 1049228
+        },
+        "latency": {},
+        "throughput": {
+          "average": 25035183.56619358
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1049228,
+          "durationUs": 10016523,
+          "bytes": 250765492,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 191059.41859707743,
+          "total": 1912530
+        },
+        "latency": {},
+        "throughput": {
+          "average": 33817517.0916827
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1912530,
+          "durationUs": 10010132,
+          "bytes": 338517810,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 164183.03578340277,
+          "total": 1643716
+        },
+        "latency": {},
+        "throughput": {
+          "average": 29060397.333662286
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1643716,
+          "durationUs": 10011485,
+          "bytes": 290937732,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "node@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 197857.76119292655,
+          "total": 1980703
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34822965.96995507
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1980703,
+          "durationUs": 10010742,
+          "bytes": 348603728,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "bun@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 259995.91499757476,
+          "total": 2601867
+        },
+        "latency": {},
+        "throughput": {
+          "average": 33539473.034687143
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2601867,
+          "durationUs": 10007338,
+          "bytes": 335640843,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 175467.17717359535,
+          "total": 1756504
+        },
+        "latency": {},
+        "throughput": {
+          "average": 30882223.18255278
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1756504,
+          "durationUs": 10010442,
+          "bytes": 309144704,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-bun@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 207083.95150621078,
+          "total": 2073052
+        },
+        "latency": {},
+        "throughput": {
+          "average": 26713829.74430119
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2073052,
+          "durationUs": 10010684,
+          "bytes": 267423708,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 143868.88097708594,
+          "total": 1440341
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34384662.55352353
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1440341,
+          "durationUs": 10011484,
+          "bytes": 344241499,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 131844.87757040237,
+          "total": 1320230
+        },
+        "latency": {},
+        "throughput": {
+          "average": 31510925.73932617
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1320230,
+          "durationUs": 10013510,
+          "bytes": 315534970,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 180910.3339630063,
+          "total": 1811671
+        },
+        "latency": {},
+        "throughput": {
+          "average": 32021129.111452114
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1811671,
+          "durationUs": 10014193,
+          "bytes": 320665767,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@bun",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 148770.28784519198,
+          "total": 1489025
+        },
+        "latency": {},
+        "throughput": {
+          "average": 26332340.94859898
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1489025,
+          "durationUs": 10008887,
+          "bytes": 263557425,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "node@node",
+      "round": 2,
+      "result": {
+        "requests": {
+          "average": 204017.23452827102,
+          "total": 2042430
+        },
+        "latency": {},
+        "throughput": {
+          "average": 35907033.2769757
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2042430,
+          "durationUs": 10011066,
+          "bytes": 359467680,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 113849.07585950708,
+          "total": 1140104
+        },
+        "latency": {},
+        "throughput": {
+          "average": 27209929.130422194
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1140104,
+          "durationUs": 10014170,
+          "bytes": 272484856,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 106546.05314440883,
+          "total": 1066142
+        },
+        "latency": {},
+        "throughput": {
+          "average": 25464506.70151371
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1066142,
+          "durationUs": 10006396,
+          "bytes": 254807938,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 195453.77415465872,
+          "total": 1957003
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34595318.02537459
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1957003,
+          "durationUs": 10012613,
+          "bytes": 346389531,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 165274.91129177428,
+          "total": 1653574
+        },
+        "latency": {},
+        "throughput": {
+          "average": 29253659.298644047
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1653574,
+          "durationUs": 10004991,
+          "bytes": 292682598,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "node@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 195927.31193017334,
+          "total": 1961309
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34483206.899710506
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1961309,
+          "durationUs": 10010391,
+          "bytes": 345190384,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "bun@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 258347.26634258556,
+          "total": 2585696
+        },
+        "latency": {},
+        "throughput": {
+          "average": 33326797.35819354
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2585696,
+          "durationUs": 10008606,
+          "bytes": 333554784,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 172335.354636615,
+          "total": 1724857
+        },
+        "latency": {},
+        "throughput": {
+          "average": 30331022.41604424
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1724857,
+          "durationUs": 10008724,
+          "bytes": 303574832,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-bun@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 203674.94759436135,
+          "total": 2040514
+        },
+        "latency": {},
+        "throughput": {
+          "average": 26274068.239672612
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2040514,
+          "durationUs": 10018483,
+          "bytes": 263226306,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "express@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 146304.53802730248,
+          "total": 1464842
+        },
+        "latency": {},
+        "throughput": {
+          "average": 34966784.58852529
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1464842,
+          "durationUs": 10012280,
+          "bytes": 350097238,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-express@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 129245.15120575803,
+          "total": 1294099
+        },
+        "latency": {},
+        "throughput": {
+          "average": 30889591.13817617
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1294099,
+          "durationUs": 10012747,
+          "bytes": 309289661,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "fastify@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 178578.6811461497,
+          "total": 1787791
+        },
+        "latency": {},
+        "throughput": {
+          "average": 31608426.562868495
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1787791,
+          "durationUs": 10011223,
+          "bytes": 316439007,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-fastify@bun",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 146677.6527092718,
+          "total": 1468462
+        },
+        "latency": {},
+        "throughput": {
+          "average": 25961944.529541105
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1468462,
+          "durationUs": 10011491,
+          "bytes": 259917774,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "node@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 203023.76025699594,
+          "total": 2032292
+        },
+        "latency": {},
+        "throughput": {
+          "average": 35732181.80523129
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 2032292,
+          "durationUs": 10010119,
+          "bytes": 357683392,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    },
+    {
+      "target": "nest-node@node",
+      "round": 3,
+      "result": {
+        "requests": {
+          "average": 182823.5951367985,
+          "total": 1831303
+        },
+        "latency": {},
+        "throughput": {
+          "average": 32176952.744076535
+        },
+        "errors": 0,
+        "timeouts": 0,
+        "httpErrors": 0,
+        "wrk": {
+          "requests": 1831303,
+          "durationUs": 10016776,
+          "bytes": 322309328,
+          "errors": {
+            "connect": 0,
+            "read": 0,
+            "write": 0,
+            "status": 0,
+            "timeout": 0
+          }
+        }
+      }
+    }
+  ]
+}

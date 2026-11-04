@@ -1,0 +1,124 @@
+{
+  "name": "@nestjs/platform-bun",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Experimental, unofficial Bun-native HTTP adapter for NestJS, ported from @nestjs/platform-node 12.3.3 onto Bun.serve()",
+  "keywords": [
+    "nestjs",
+    "nest",
+    "bun",
+    "bun-serve",
+    "http",
+    "adapter",
+    "platform",
+    "typescript"
+  ],
+  "homepage": "https://github.com/iiAku/platform-bun#readme",
+  "bugs": {
+    "url": "https://github.com/iiAku/platform-bun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiAku/platform-bun.git"
+  },
+  "license": "MIT",
+  "author": "Yoann Gendrey (https://github.com/iiAku)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./*.js": "./dist/*.js",
+    "./*": "./dist/*.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "COMPATIBILITY.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "bun": ">=1.4.4"
+  },
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "check": "bun check --no-script -p tsconfig.build.json",
+    "lint": "sh scripts/bun-canary.sh lint --type-aware --tsconfig tsconfig.build.json --max-warnings 0 src && sh scripts/bun-canary.sh lint --max-warnings 0 src test benchmark",
+    "fmt": "bun fmt --no-script src test/native test/transport test/support test/benchmark 'benchmark/**/*.{ts,mjs}'",
+    "test": "bun test --isolate --timeout 10000",
+    "bench": "bun benchmark/run.ts",
+    "bench:nest": "node benchmark/nest/main.mjs",
+    "prepack": "bun run build",
+    "prepare": "[ -n \"$CI\" ] || ! git rev-parse --git-dir > /dev/null 2>&1 || lefthook install"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^12.0.0",
+    "@nestjs/core": "^12.0.0"
+  },
+  "dependencies": {
+    "@fastify/proxy-addr": "5.1.2",
+    "@types/bun": "1.4.4",
+    "content-type": "2.1.0",
+    "cookie": "0.7.2",
+    "cookie-signature": "1.2.2",
+    "cors": "2.8.6",
+    "encodeurl": "2.0.1",
+    "fast-querystring": "1.1.2",
+    "find-my-way": "9.10.0",
+    "mime-types": "3.0.2",
+    "multer": "2.5.0",
+    "on-finished": "2.4.2",
+    "path-to-regexp": "8.4.2",
+    "qs": "6.17.1",
+    "secure-json-parse": "4.1.1",
+    "send": "1.2.1",
+    "serve-static": "2.2.1",
+    "tslib": "2.9.1",
+    "type-is": "2.1.0"
+  },
+  "devDependencies": {
+    "@evilmartians/lefthook": "2.2.2",
+    "@nestjs/common": "12.3.3",
+    "@nestjs/core": "12.3.3",
+    "@nestjs/platform-express": "12.3.3",
+    "@nestjs/platform-fastify": "12.3.3",
+    "@nestjs/platform-node": "12.3.3",
+    "@nestjs/testing": "12.3.3",
+    "@types/cookie": "^0.6.0",
+    "@types/cookie-signature": "^1.1.2",
+    "@types/cors": "^2.8.19",
+    "@types/ejs": "^3.1.5",
+    "@types/encodeurl": "^1.0.2",
+    "@types/mime-types": "^3.0.1",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^26.6.6",
+    "@types/on-finished": "^2.3.5",
+    "@types/qs": "^6.14.0",
+    "@types/send": "^1.2.1",
+    "@types/serve-static": "^2.2.0",
+    "@types/supertest": "^7.2.1",
+    "@types/type-is": "^1.6.7",
+    "autocannon": "^8.0.0",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^7.0.2",
+    "eventsource": "5.1.4",
+    "express-rate-limit": "^8.7.3",
+    "express-session": "^1.19.0",
+    "handlebars": "^4.7.8",
+    "helmet": "^8.3.0",
+    "http-errors": "2.0.1",
+    "pug": "^3.0.4",
+    "supertest": "7.3.1",
+    "typescript": "7.0.2"
+  }
+}

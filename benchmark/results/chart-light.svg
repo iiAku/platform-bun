@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="474" viewBox="0 0 720 474" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="12">
+<title id="title">Requests per second: platform-bun on Bun against platform-node on Node and on Bun</title>
+<desc id="desc">Controllers benchmark, GET /: platform-bun on Bun 168,973, platform-node on Node 138,950, platform-node on Bun 146,138. Controllers benchmark, GET /users/42: platform-bun on Bun 164,032, platform-node on Node 131,014, platform-node on Bun 136,205. Controllers benchmark, POST /echo: platform-bun on Bun 126,202, platform-node on Node 102,458, platform-node on Bun 113,978. Nest's benchmark, GET /: platform-bun on Bun 194,193, platform-node on Node 172,841, platform-node on Bun 153,606.</desc>
+<rect x="0.5" y="0.5" width="719" height="473" rx="12" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="24" y="38" font-size="17" font-weight="600" fill="#0b0b0b">Requests per second, higher is better</text>
+<text x="24" y="62" font-size="13" fill="#0b0b0b"><tspan>platform-bun on Bun against platform-node on Node:</tspan><tspan dx="5" font-weight="600">+12% to +25%</tspan></text>
+<text x="24" y="80" font-size="13" fill="#0b0b0b"><tspan>platform-bun on Bun against platform-node on Bun:</tspan><tspan dx="5" font-weight="600">+11% to +26%</tspan></text>
+<rect x="24" y="98" width="12" height="12" rx="3" fill="#2a78d6"/><text x="42" y="108" fill="#0b0b0b">platform-bun on Bun</text>
+<rect x="203" y="98" width="12" height="12" rx="3" fill="#6f6e69"/><text x="221" y="108" fill="#0b0b0b">platform-node on Node</text>
+<rect x="396" y="98" width="12" height="12" rx="3" fill="#a8a79f"/><text x="414" y="108" fill="#0b0b0b">platform-node on Bun</text>
+<text x="24" y="150" fill="#52514e"><tspan font-weight="600">Controllers benchmark</tspan><tspan dx="10">autocannon · 100 connections · median of 3 rounds</tspan></text>
+<text x="24" y="372" fill="#52514e"><tspan font-weight="600">Nest's benchmark</tspan><tspan dx="10">autocannon · 100 connections · pipelining 10 · median of 3 rounds</tspan></text>
+<text x="24" y="184" dy="0.35em" font-size="13" fill="#0b0b0b">GET /</text>
+<text x="24" y="248" dy="0.35em" font-size="13" fill="#0b0b0b">GET /users/42</text>
+<text x="24" y="312" dy="0.35em" font-size="13" fill="#0b0b0b">POST /echo</text>
+<text x="24" y="406" dy="0.35em" font-size="13" fill="#0b0b0b">GET /</text>
+<path d="M174 160h382.9a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-382.9z" fill="#2a78d6"><title>platform-bun on Bun, Controllers benchmark, GET /: 168,973 requests/s</title></path><text x="566.9" y="167" dy="0.35em" fill="#0b0b0b" font-weight="600">168,973</text>
+<path d="M174 177h314.2a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-314.2z" fill="#6f6e69"><title>platform-node on Node, Controllers benchmark, GET /: 138,950 requests/s</title></path><text x="498.2" y="184" dy="0.35em" fill="#52514e">138,950</text>
+<path d="M174 194h330.7a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-330.7z" fill="#a8a79f"><title>platform-node on Bun, Controllers benchmark, GET /: 146,138 requests/s</title></path><text x="514.7" y="201" dy="0.35em" fill="#52514e">146,138</text>
+<path d="M174 224h371.6a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-371.6z" fill="#2a78d6"><title>platform-bun on Bun, Controllers benchmark, GET /users/42: 164,032 requests/s</title></path><text x="555.6" y="231" dy="0.35em" fill="#0b0b0b" font-weight="600">164,032</text>
+<path d="M174 241h296a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-296z" fill="#6f6e69"><title>platform-node on Node, Controllers benchmark, GET /users/42: 131,014 requests/s</title></path><text x="480" y="248" dy="0.35em" fill="#52514e">131,014</text>
+<path d="M174 258h307.9a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-307.9z" fill="#a8a79f"><title>platform-node on Bun, Controllers benchmark, GET /users/42: 136,205 requests/s</title></path><text x="491.9" y="265" dy="0.35em" fill="#52514e">136,205</text>
+<path d="M174 288h285a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-285z" fill="#2a78d6"><title>platform-bun on Bun, Controllers benchmark, POST /echo: 126,202 requests/s</title></path><text x="469" y="295" dy="0.35em" fill="#0b0b0b" font-weight="600">126,202</text>
+<path d="M174 305h230.6a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-230.6z" fill="#6f6e69"><title>platform-node on Node, Controllers benchmark, POST /echo: 102,458 requests/s</title></path><text x="414.6" y="312" dy="0.35em" fill="#52514e">102,458</text>
+<path d="M174 322h257a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-257z" fill="#a8a79f"><title>platform-node on Bun, Controllers benchmark, POST /echo: 113,978 requests/s</title></path><text x="441" y="329" dy="0.35em" fill="#52514e">113,978</text>
+<path d="M174 382h440.7a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-440.7z" fill="#2a78d6"><title>platform-bun on Bun, Nest's benchmark, GET /: 194,193 requests/s</title></path><text x="624.7" y="389" dy="0.35em" fill="#0b0b0b" font-weight="600">194,193</text>
+<path d="M174 399h391.8a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-391.8z" fill="#6f6e69"><title>platform-node on Node, Nest's benchmark, GET /: 172,841 requests/s</title></path><text x="575.8" y="406" dy="0.35em" fill="#52514e">172,841</text>
+<path d="M174 416h347.8a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-347.8z" fill="#a8a79f"><title>platform-node on Bun, Nest's benchmark, GET /: 153,606 requests/s</title></path><text x="531.8" y="423" dy="0.35em" fill="#52514e">153,606</text>
+<text x="24" y="456" font-size="11" fill="#52514e">Node v26.13.0 · Bun 1.4.4 · AMD Ryzen 9 9900X 12-Core Processor · server and load generator on one machine</text>
+</svg>

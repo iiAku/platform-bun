@@ -1,0 +1,25 @@
+platform-bun
+Copyright (c) 2026 Yoann Gendrey
+
+This is an experimental, unofficial project. It is not affiliated with,
+endorsed by or supported by NestJS or its maintainers.
+
+The package is named @nestjs/platform-bun to mirror @nestjs/platform-node, as a
+local identity only: it is marked private, it is not published to npm, and no
+ownership of the @nestjs npm scope is claimed.
+
+This project is derived from NestJS (https://github.com/nestjs/nest), released
+under the MIT license, Copyright (c) 2017-present Kamil Mysliwiec.
+
+  Source commit:      59f33793c616eaf9669e8b81a35aa5f31accc5b4
+  Published baseline: @nestjs/platform-node@12.3.3
+  Design source:      https://github.com/nestjs/nest/pull/18063
+
+The router, body parsers, request and response helpers, configured requests,
+view renderer, Multer module and interceptors, and the upstream-derived tests
+are adapted from NestJS under the MIT license reproduced in LICENSE. The
+Bun.serve() transport (src/transport) and the TLS lifecycle facade are new to
+this project.
+
+COMPATIBILITY.md lists the runtime differences from @nestjs/platform-node and
+the limits of the Node compatibility surface.
