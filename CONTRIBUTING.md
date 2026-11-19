@@ -14,7 +14,7 @@ and pull requests are welcome, but expect the API and behavior to keep changing.
 
 You need:
 
-- [Bun](https://bun.sh) 1.4.4 (the version `packageManager` pins);
+- [Bun](https://bun.sh) 1.4.5 (the version `packageManager` pins);
 - Node.js 26 on your `PATH`: the differential tests run the published
   `@nestjs/platform-node` in a Node process and compare it with this adapter;
 - Linux or macOS.

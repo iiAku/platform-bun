@@ -46,7 +46,7 @@
   "engines": {
     "bun": ">=1.4.4"
   },
-  "packageManager": "bun@1.4.4",
+  "packageManager": "bun@1.4.5",
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "check": "bun check --no-script -p tsconfig.build.json",
